@@ -35,8 +35,8 @@ const Step2: FunctionComponent<stepsType> = ({setStep2Data,step2Data,isMontly,se
     },[isMontly])
   return (
     <div >
-        <h2 className="h2">Selecione Seu Plano</h2>
-    <p className="p-style">Você tem as opções de planos mensais e anuais. </p>
+        <h2 className="h2">Select your plan</h2>
+    <p className="p-style">You have the option of monthly or yearly billing. </p>
 <div className="h-72">
     
     {plan.map((el,index)=>{

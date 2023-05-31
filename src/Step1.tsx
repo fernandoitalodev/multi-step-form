@@ -55,18 +55,18 @@ const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
   return (
     <div>
         <h2 className="h2">Personal Info</h2>
-    <p className="p-style">Forneça Seu nome, endereço de email e número de telefone. </p>
+    <p className="p-style">Please provide your name, email address, and phone number. </p>
 
-    <h3 className=" label-style">Nome</h3>
+    <h3 className=" label-style">Name</h3>
     <input   onChange={handleNameChange} value={name}  className="input-style" placeholder="Ex.: Stephen King" />
-    {errorName && <p className="text-sm text-red-500" >Nome não pode estar vazio</p>}
+    {errorName && <p className="text-sm text-red-500" >This field is required</p>}
     
     
 
-    <h3 className=" label-style">Endereço de Email</h3>
+    <h3 className=" label-style">Email Address</h3>
     <input  onChange={handleEmailChange} value={email}   className="input-style " placeholder="Ex.: stephenKing@gmail.com" />
-    {errorEmail && <p className="text-sm text-red-500" > Insira um Email Válido</p>}
-    <h3 className=" label-style">Numero de telefone</h3>
+    {errorEmail && <p className="text-sm text-red-500" > This field is required</p>}
+    <h3 className=" label-style">Phone Number</h3>
     <input  onChange={handlePhoneChange} value={phone}   className="input-style " placeholder="Ex.: 86 98345-22xx" />
     </div>
   )

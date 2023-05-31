@@ -23,7 +23,7 @@ const ContentMain: FunctionComponent<stepsType> = ({actualStep,setActualStep}) =
   const [step2Data,setStep2Data]=useState<string[]>(["/icon-arcade.svg","Arcade","R$ 9.00","Montly"])
   const [step3Data,setStep3Data]=useState<string[][]>([ ])
   const[step4Data,setStep4Data]=useState({plan: step2Data, Adds: step3Data})
-  const [total,setTotal]=useState()
+  
   useEffect(()=>{
 
     setStep4Data({plan: step2Data, Adds: step3Data})
