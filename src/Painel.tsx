@@ -20,7 +20,7 @@ const Painel: FunctionComponent<stepsType> = ({actualStep}) => {
  }
     const numbers:number[]=[1,2,3,4]
   return (
-    <div className=" md:rounded-lg md:m-2 bg-[url('/bg-sidebar-mobile.svg')] md:bg-[url('/bg-sidebar-desktop.svg')] bg-cover h-28 flex items-center justify-center gap-4 text-white md:flex-col md:w-4/12 md:h-auto md:justify-left md:items-center">
+    <div className="bg-center md:rounded-lg md:m-2 bg-[url('/bg-sidebar-mobile.svg')] md:bg-[url('/bg-sidebar-desktop.svg')] bg-cover h-28 flex items-center justify-center gap-4 text-white md:flex-col md:w-4/12 md:h-auto md:justify-left md:items-center">
         {
             numbers.map((el,index)=>{
                 return <div className="flex items-left gap-3 justify-left md:w-9/12">

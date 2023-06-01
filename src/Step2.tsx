@@ -47,16 +47,16 @@ const Step2: FunctionComponent<stepsType> = ({setStep2Data,step2Data,isMontly,se
         <div className="">
             <h3 className="font-medium text-blue-950">{el[1]}</h3>
             <p className="text-sm text-gray-500  ">${el[2]}{el[3]}</p>
-           {!isMontly&& <h4 className="text-sm text-blue-950" >2 meses grátis</h4>}
+           {!isMontly&& <h4 className="text-sm text-blue-950" >2 months free</h4>}
         </div>
        </div>
     })}
     
 </div> 
    <div className="flex justify-center items-center gap-3">
-    <h2 className={`font-medium ${isMontly?"text-blue-950":""} `} >Mensal</h2>
+    <h2 className={`font-medium ${isMontly?"text-blue-950":""} `} >Monthly</h2>
 <Switch onChange={()=>setIsMontly(!isMontly)} checked={!isMontly ? true :false} offColor="#03295a" onColor="#03295a" uncheckedIcon={false} checkedIcon={false}/>
-    <h2 className={` font-medium ${!isMontly ?"text-blue-950":""}`} >Anual</h2>
+    <h2 className={` font-medium ${!isMontly ?"text-blue-950":""}`} >Yearly</h2>
    </div>
 
     </div>
